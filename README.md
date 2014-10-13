@@ -25,26 +25,26 @@ whatObj can be a String or JavaScript object, depending on whatAction value
 For Create and Update, whatObj is an object with a key and value property.
 The key is a string, and the value is any valid JavaScript Object type
 
-create:
-	manageLocalCRUD('create', {
-		key:"StringName", value:"String Value"})
-	OR
-	manageLocalCRUD('create', {
-		key:"ObjectName", value:{"Property":"Value"}})
-update:
-	manageLocalCRUD('update', {
-		key:"StringName", value:"String Value"})
-	OR
-	manageLocalCRUD('update', {
-		key:"ObjectName", value:{"Property":"Value"}})
+	create:
+		--manageLocalCRUD('create', {
+			key:"StringName", value:"String Value"})
+		OR
+		--manageLocalCRUD('create', {
+			key:"ObjectName", value:{"Property":"Value"}})
+	update:
+		--manageLocalCRUD('update', {
+			key:"StringName", value:"String Value"})
+		OR
+		--manageLocalCRUD('update', {
+			key:"ObjectName", value:{"Property":"Value"}})
 
 For retrieve and delete, the whatObj value is a string which refers to the 
 String and Object key names from the create and update methods.
 
-retrieve:
-	manageLocalCRUD('retrieve', 'StringKeyName')
-delete:
-	manageLocalCRUD('delete', 'StringKeyName')
+	retrieve:
+		--manageLocalCRUD('retrieve', 'StringKeyName')
+	delete:
+		--manageLocalCRUD('delete', 'StringKeyName')
 
 
 
